@@ -1,0 +1,99 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1718379331
+export_presets.cfg::TextFile::-1::1716887631::0::1::::<><>::
+::res://Assets/::1718378014
+::res://Assets/Fonts/::1718378014
+RobotoMono-Regular.ttf::FontFile::3265486874598783296::1716887631::1716887642::1::::<><>::
+::res://Assets/Graphics/::1718378014
+Broken wardrobe.png::CompressedTexture2D::2256946383792916383::1716887631::1716887642::1::::<><>::
+Coffee Mug 001 16x161.png::CompressedTexture2D::2003820713151137619::1716887631::1716887642::1::::<><>::
+computer-icons-encapsulated-postscript-clip-art-play-again-4f81a033603416f1691a78e07faacf7a.png::CompressedTexture2D::7016376667588026471::1716887631::1716887642::1::::<><>::
+crash-6711.mp3::AudioStreamMP3::1503875760989537392::1716887631::1716887642::1::::<><>::
+Dead Body Found.png::CompressedTexture2D::5592820631628201932::1716887631::1716887643::1::::<><>::
+door asset.png::CompressedTexture2D::7151390315832906273::1716887631::1716887642::1::::<><>::
+icon.svg::CompressedTexture2D::1876269736621909339::1716887631::1716887642::1::::<><>::
+inventory-background.png::CompressedTexture2D::9099126630061803349::1716887631::1716887642::1::::<><>::
+inventory-slot.png::CompressedTexture2D::1212112210613410995::1716887631::1716887642::1::::<><>::
+light asset.png::CompressedTexture2D::14307747660820576::1716887631::1716887643::1::::<><>::
+Lose Background.png::CompressedTexture2D::2752752692423588219::1716887631::1716887643::1::::<><>::
+non-broken wardrobe.png::CompressedTexture2D::2233989841894237236::1716887631::1716887642::1::::<><>::
+pistol small.png::CompressedTexture2D::8767094652424969190::1716887631::1716887642::1::::<><>::
+posion_potion.png::CompressedTexture2D::7072557161993987791::1716887631::1716887642::1::::<><>::
+Speech_Bubble.png::CompressedTexture2D::2938037143526369608::1716887631::1716887642::1::::<><>::
+Win Background.png::CompressedTexture2D::411300531370087107::1716887631::1716887643::1::::<><>::
+::res://Assets/Graphics/32x32/::1718378014
+Interiors_free_16x16.png::CompressedTexture2D::1786269246985190124::1716887631::1716887643::1::::<><>::
+roguelikeIndoor_transparent.png::CompressedTexture2D::3992700653482874922::1716887631::1716887642::1::::<><>::
+Room_Builder_free_16x16.png::CompressedTexture2D::1223906975400686539::1716887631::1716887642::1::::<><>::
+RPG_basics.png::CompressedTexture2D::566303160698206093::1716887631::1716887642::1::::<><>::
+::res://Assets/Graphics/32x32/Characters/::1718378014
+Adam_M.png::CompressedTexture2D::6914322687771067849::1716887631::1716887642::1::::<><>::
+ALex_M.png::CompressedTexture2D::9010642545018684941::1716887631::1716887642::1::::<><>::
+Amelia_F.png::CompressedTexture2D::7544922256904350616::1716887631::1716887642::1::::<><>::
+Bob_M.png::CompressedTexture2D::7917629890584858271::1716887631::1716887642::1::::<><>::
+Luna_F.png::CompressedTexture2D::1951010398766258131::1716887631::1716887642::1::::<><>::
+::res://Main_Scenes/::1718378916
+Game.tscn::PackedScene::6134958761397312328::1716887631::0::1::::<><>::uid://dnmqbbkcnsnb5::::res://Secondary_Scenes/Game_Manager.tscn<>res://Scripts/Game_Scene.gd<>uid://ro4tl3yp0wfr::::res://Assets/Graphics/32x32/Room_Builder_free_16x16.png<>uid://ick6vpip4umn::::res://Assets/Graphics/32x32/RPG_basics.png<>uid://bw5dgxcf1ykpe::::res://Assets/Graphics/32x32/roguelikeIndoor_transparent.png<>uid://0pjugd0acigq::::res://Assets/Graphics/32x32/Interiors_free_16x16.png<>uid://tv0m3tp7mcub::::res://Secondary_Scenes/Item.tscn<>uid://r3b617omh2a0::::res://Secondary_Scenes/Dialogue Panel.tscn<>uid://bix2o4aqo01a7::::res://Secondary_Scenes/Item Panel.tscn<>uid://bkpt0i40vowfy::::res://Secondary_Scenes/inv_ui.tscn<>uid://d4kpvipi2o6c::::res://Secondary_Scenes/light.tscn<>res://Scripts/day_night_cycle.gd<>uid://b10w5uttqs18h::::res://Secondary_Scenes/Player.tscn<>uid://b2fj0v3ip66el::::res://Secondary_Scenes/daynightcycle-gradient-texture.tres<>uid://baal7jyhuyqi7::::res://Resources/player_inventory.tres<>uid://63fqsf1hglku::::res://Assets/Graphics/non-broken wardrobe.png<>uid://dx671hoibc5pn::::res://Secondary_Scenes/pickup_node.tscn<>res://Scripts/Wardrobe.gd<>uid://voqu44gq5dk7::::res://Assets/Graphics/crash-6711.mp3<>uid://b37vjdr563x7k::::res://Resources/pistol.tres<>uid://bln7wl6orci1t::::res://Resources/poison.tres<>uid://bwhjrrc2we7av::::res://Resources/coffee_mug.tres<>uid://c85gma3wyfllx::::res://Assets/Graphics/door asset.png<>uid://b2igj5pwxc2ru::::res://Secondary_Scenes/sign.tscn<>res://Scripts/Door_trigger.gd<>uid://bnsm7y6apkfdl::::res://Secondary_Scenes/Meeting.tscn
+losing_scene.tscn::PackedScene::7744671869475111374::1716887631::0::1::::<><>::uid://c671x0ufkt7xb::::res://Assets/Graphics/computer-icons-encapsulated-postscript-clip-art-play-again-4f81a033603416f1691a78e07faacf7a.png<>res://Scripts/end_game_UI.gd<>uid://bfhpo1p7q673l::::res://Assets/Graphics/Lose Background.png
+Setup.tscn::PackedScene::7996012713860108592::1718378916::0::1::::<><>::uid://bmr3debnqv0rs::::res://Assets/Fonts/RobotoMono-Regular.ttf<>uid://dnmqbbkcnsnb5::::res://Secondary_Scenes/Game_Manager.tscn<>res://Scripts/Setup_Scene.gd
+winning_scene.tscn::PackedScene::3177833541906795618::1716887631::0::1::::<><>::res://Scripts/end_game_UI.gd<>uid://c671x0ufkt7xb::::res://Assets/Graphics/computer-icons-encapsulated-postscript-clip-art-play-again-4f81a033603416f1691a78e07faacf7a.png<>uid://f4ica74xdyfr::::res://Assets/Graphics/Win Background.png
+::res://Resources/::1718378054
+coffee_mug.tres::Resource/Resource::3945603596682424693::1716887631::0::1::::<><>::res://Scripts/inventory_item.gd<>uid://3swvtl22ygx4::::res://Assets/Graphics/Coffee Mug 001 16x161.png
+pistol.tres::Resource/Resource::4419059707918503286::1716887631::0::1::::<><>::res://Scripts/inventory_item.gd<>uid://dw531d36lkgdi::::res://Assets/Graphics/pistol small.png
+player_inventory.tres::Resource/Inv::2387146226149682896::1718378054::0::1::::<><>::res://Scripts/inv_slot.gd<>res://Scripts/inventory.gd
+poison.tres::Resource/Resource::3187317732053359815::1716887631::0::1::::<><>::res://Scripts/inventory_item.gd<>uid://c7088orrntbpf::::res://Assets/Graphics/posion_potion.png
+::res://Scripts/::1718378878
+Animation_Creator.gd::GDScript::-1::1716887631::0::1::::<>AnimatedSprite2D<>::
+Brain.gd::GDScript::-1::1716888193::0::1::::<>CharacterBody2D<>::
+Character_Setup.gd::GDScript::-1::1716887631::0::1::::<>MarginContainer<>::
+Chat_API.gd::GDScript::-1::1718378544::0::1::::Chat_API<>Node2D<>::
+Concurrency_Handler.gd::GDScript::-1::1716887631::0::1::::ConcurrencyHandler<>RefCounted<>::
+Data_Transfer.gd::GDScript::-1::1716887631::0::1::::Data_Transfer<>Node<>::
+day_night_cycle.gd::GDScript::-1::1717012110::0::1::::<>CanvasModulate<>::
+Dialogue_Panel.gd::GDScript::-1::1716887631::0::1::::<>Panel<>::
+Door_trigger.gd::GDScript::-1::1716887631::0::1::::<>Area2D<>::
+Embeddings_API.gd::GDScript::-1::1718378860::0::1::::Embedding_API<>Node2D<>::
+end_game_UI.gd::GDScript::-1::1716887631::0::1::::<>Control<>::
+Entity.gd::GDScript::-1::1716887631::0::1::::Entity<>Node2D<>::
+env.gd::GDScript::-1::1718378635::0::1::::Env_Handler<>Node<>::
+Game_Manager.gd::GDScript::-1::1716887631::0::1::::Game_Manager<>Node<>::
+Game_Scene.gd::GDScript::-1::1717011851::0::1::::<>Game_Manager<>::
+inventory.gd::GDScript::-1::1716887631::0::1::::Inv<>Resource<>::
+inventory_item.gd::GDScript::-1::1716887631::0::1::::InvItem<>Resource<>::
+inv_slot.gd::GDScript::-1::1716887631::0::1::::InvSlot<>Resource<>::
+inv_ui.gd::GDScript::-1::1716887631::0::1::::<>Control<>::
+inv_ui_slot.gd::GDScript::-1::1716887631::0::1::::<>Panel<>::
+Item_Manager.gd::GDScript::-1::1716887631::0::1::::<>Node2D<>::
+Item_Panel.gd::GDScript::-1::1716887631::0::1::::<>Panel<>::
+kill_button.gd::GDScript::-1::1716887631::0::1::::<>Button<>::
+Light.gd::GDScript::-1::1717012110::0::1::::<>PointLight2D<>::
+Meeting.gd::GDScript::-1::1716887631::0::1::::<>CanvasLayer<>::
+Memory.gd::GDScript::-1::1716887631::0::1::::Memory<>Node2D<>::
+parser.gd::GDScript::-1::1718378878::0::1::::GodotEnv_Parser<>RefCounted<>::
+pickup_script.gd::GDScript::-1::1716887631::0::1::::<>Node2D<>::
+Player.gd::GDScript::-1::1716887889::0::1::::<>CharacterBody2D<>::
+Setup_Scene.gd::GDScript::-1::1716887631::0::1::::<>Game_Manager<>::
+sign_area.gd::GDScript::-1::1716887631::0::1::::<>Area2D<>::
+sign_panel.gd::GDScript::-1::1716887631::0::1::::<>CanvasLayer<>::
+Speech_Bubble.gd::GDScript::-1::1716888247::0::1::::<>Sprite2D<>::
+Stats_Panel.gd::GDScript::-1::1716887631::0::1::::<>Panel<>::
+Wardrobe.gd::GDScript::-1::1716887631::0::1::::<>Sprite2D<>::
+::res://Secondary_Scenes/::1718378878
+Agent.tscn::PackedScene::872834659553450349::1716887631::0::1::::<><>::uid://d1m2738keddqj::::res://Assets/Graphics/32x32/Characters/Alex_M.png<>res://Scripts/Animation_Creator.gd<>res://Scripts/Brain.gd<>uid://bmr3debnqv0rs::::res://Assets/Fonts/RobotoMono-Regular.ttf
+Character_Setup.tscn::PackedScene::8240473153342430188::1718378878::0::1::::<><>::res://Scripts/Character_Setup.gd
+daynightcycle-gradient-texture.tres::GradientTexture1D::4292433595102454391::1716887631::0::1::::<><>::
+Dialogue Panel.tscn::PackedScene::1251130411257325885::1716887631::0::1::::<><>::res://Scripts/Dialogue_Panel.gd
+Game_Manager.tscn::PackedScene::8097462877180969876::1716887631::0::1::::<><>::res://Scripts/Game_Manager.gd
+inv_ui.tscn::PackedScene::3120473520245160506::1716887631::0::1::::<><>::res://Scripts/inv_ui.gd<>uid://d2vxjy3y2dsu4::::res://Assets/Graphics/inventory-background.png<>uid://cfclq0q53hnsg::::res://Secondary_Scenes/inv_ui_slot.tscn
+inv_ui_slot.tscn::PackedScene::5128612139908788182::1716887631::0::1::::<><>::uid://rjfktshg6vix::::res://Assets/Graphics/inventory-slot.png<>res://Scripts/inv_ui_slot.gd<>res://Scripts/kill_button.gd
+Item Panel.tscn::PackedScene::2997078004983940400::1716887631::0::1::::<><>::res://Scripts/Item_Panel.gd
+Item.tscn::PackedScene::1378480817033747633::1716887631::0::1::::<><>::res://Scripts/Item_Manager.gd
+light.tscn::PackedScene::271068558660157584::1716887631::0::1::::<><>::uid://g6v8mtm5cno::::res://Assets/Graphics/light asset.png<>res://Scripts/Light.gd
+Meeting.tscn::PackedScene::3336821508348536581::1716887631::0::1::::<><>::res://Scripts/Meeting.gd<>uid://clxg66d7akuwa::::res://Assets/Graphics/Dead Body Found.png
+meeting_agent.tscn::PackedScene::2979369651549742627::1716887631::0::1::::<><>::uid://3swvtl22ygx4::::res://Assets/Graphics/Coffee Mug 001 16x161.png
+pickup_node.tscn::PackedScene::8839590929195601571::1716887631::0::1::::<><>::res://Scripts/pickup_script.gd
+Player.tscn::PackedScene::4264330490495126401::1716887631::0::1::::<><>::res://Scripts/Player.gd<>uid://c5rl5cpkku02p::::res://Assets/Graphics/32x32/Characters/Adam_M.png<>res://Scripts/Animation_Creator.gd<>uid://bmr3debnqv0rs::::res://Assets/Fonts/RobotoMono-Regular.ttf
+sign.tscn::PackedScene::4298416457957192514::1716887631::0::1::::<><>::uid://by6wnvuc2iitb::::res://Secondary_Scenes/sign_UI.tscn<>res://Scripts/sign_area.gd
+sign_UI.tscn::PackedScene::4136308764557074775::1716887631::0::1::::<><>::res://Scripts/sign_panel.gd<>uid://bmr3debnqv0rs::::res://Assets/Fonts/RobotoMono-Regular.ttf
+Speech_Bubble.tscn::PackedScene::9133451552145880292::1716887631::0::1::::<><>::res://Assets/Graphics/Speech_Bubble.png<>uid://bmr3debnqv0rs::::res://Assets/Fonts/RobotoMono-Regular.ttf<>res://Scripts/Speech_Bubble.gd
+Vote_Button.tscn::PackedScene::7445729427763853646::1716887631::0::1::::<><>::uid://7fjtvifh41jn::::res://Assets/Graphics/Broken wardrobe.png

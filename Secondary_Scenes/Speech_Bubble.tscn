@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3eku3hucvxs3"]
+
+[ext_resource type="Texture2D" path="res://Assets/Graphics/Speech_Bubble.png" id="1_81xj8"]
+[ext_resource type="FontFile" uid="uid://bmr3debnqv0rs" path="res://Assets/Fonts/RobotoMono-Regular.ttf" id="2_btin4"]
+[ext_resource type="Script" path="res://Scripts/Speech_Bubble.gd" id="2_uc3o4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vg5oj"]
+bg_color = Color(0.533333, 0.827451, 0.517647, 1)
+
+[node name="Speech Bubble" type="Sprite2D"]
+position = Vector2(76, -12)
+scale = Vector2(0.10667, 0.10667)
+texture = ExtResource("1_81xj8")
+script = ExtResource("2_uc3o4")
+
+[node name="Speech Text" type="RichTextLabel" parent="."]
+anchors_preset = -1
+anchor_left = 0.197167
+anchor_top = 0.187316
+anchor_right = 0.9
+anchor_bottom = 0.75
+offset_left = -480.28
+offset_top = -374.112
+offset_right = -480.0
+offset_bottom = -374.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_btin4")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "This is some test text. I think the killer is John Cena.
+
+This is some test text. I think the killer is John Cena.
+
+This is some test text. I think the killer is John Cena."
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress Bar" type="Panel" parent="."]
+offset_left = -299.991
+offset_top = 206.244
+offset_right = 375.009
+offset_bottom = 234.244
+theme_override_styles/panel = SubResource("StyleBoxFlat_vg5oj")

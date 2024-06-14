@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnmqbbkcnsnb5"]
+
+[ext_resource type="Script" path="res://Scripts/Game_Manager.gd" id="1_s4bc0"]
+
+[node name="GameManager" type="Node2D"]
+z_index = 10
+script = ExtResource("1_s4bc0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Stats Panel" type="PanelContainer" parent="CanvasLayer"]
+visible = false
+offset_left = 20.0
+offset_top = 513.0
+offset_right = 403.0
+offset_bottom = 636.0
+
+[node name="Stats Label" type="Label" parent="CanvasLayer/Stats Panel"]
+layout_mode = 2
+text = "Time: Monday, Mar 21, 00:23:30
+Chat Requests: 0    (per min: 0)
+Embedding Requests: 0    (per min: 0)
+Chat Tokens: 0    (per min: 0)"

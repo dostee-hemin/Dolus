@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=3 uid="uid://dl6lfqko4dw6s"]
+
+[ext_resource type="FontFile" uid="uid://bmr3debnqv0rs" path="res://Assets/Fonts/RobotoMono-Regular.ttf" id="1_3la5u"]
+[ext_resource type="PackedScene" uid="uid://dnmqbbkcnsnb5" path="res://Secondary_Scenes/Game_Manager.tscn" id="1_5u4s0"]
+[ext_resource type="Script" path="res://Scripts/Setup_Scene.gd" id="1_altm0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_by6qa"]
+bg_color = Color(0.254902, 0.254902, 0.254902, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ij7bd"]
+font = ExtResource("1_3la5u")
+font_size = 51
+
+[node name="Setup" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by6qa")
+
+[node name="Instruction" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -324.5
+offset_top = 30.0
+offset_right = 326.5
+offset_bottom = 98.0
+grow_horizontal = 2
+text = "Choose Your Character"
+label_settings = SubResource("LabelSettings_ij7bd")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.055
+anchor_top = 0.182
+anchor_right = 0.952
+anchor_bottom = 0.818
+offset_bottom = -6.10352e-05
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+follow_focus = true
+
+[node name="Slider" type="HBoxContainer" parent="CanvasLayer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="Redo Button" type="Button" parent="CanvasLayer"]
+offset_left = 927.0
+offset_top = 556.0
+offset_right = 1099.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 36
+text = "Redo"
+
+[node name="Start Button" type="Button" parent="CanvasLayer"]
+offset_left = 482.0
+offset_top = 556.0
+offset_right = 722.825
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 36
+text = "Start"
+
+[node name="GameManager" parent="." instance=ExtResource("1_5u4s0")]
+script = ExtResource("1_altm0")
+next_scene = "res://Main_Scenes/Game.tscn"
+
+[connection signal="pressed" from="CanvasLayer/Redo Button" to="GameManager" method="_on_redo_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Start Button" to="GameManager" method="_on_start_button_pressed"]

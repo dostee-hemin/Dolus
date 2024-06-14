@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://r3b617omh2a0"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue_Panel.gd" id="1_w57gl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j4e8g"]
+font_size = 40
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_xfduq"]
+
+[node name="Dialogue Panel" type="Panel"]
+offset_left = 127.0
+offset_top = 78.0
+offset_right = 1016.0
+offset_bottom = 546.0
+script = ExtResource("1_w57gl")
+
+[node name="Agent Name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 218.0
+offset_right = 170.0
+offset_bottom = 273.0
+text = "Name"
+label_settings = SubResource("LabelSettings_j4e8g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Agent Icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 42.0
+offset_right = 174.0
+offset_bottom = 158.0
+scale = Vector2(1, 1.4)
+texture = SubResource("PlaceholderTexture2D_xfduq")
+
+[node name="Player Input Box" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.058
+anchor_top = 0.835
+anchor_right = 0.785
+anchor_bottom = 0.949
+offset_left = 0.438
+offset_top = -2.78003
+offset_right = 8.43805
+offset_bottom = 0.659973
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Enter your text here..."
+wrap_mode = 1
+scroll_smooth = true
+
+[node name="Dialogue Text" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.264
+anchor_top = 0.077
+anchor_right = 0.987
+anchor_bottom = 0.728
+offset_left = -7.696
+offset_top = 31.964
+offset_right = -27.4431
+offset_bottom = 2.29599
+theme_override_font_sizes/normal_font_size = 25
+text = "Dialogue goes here"
+
+[node name="Leave Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 392.0
+offset_right = 853.0
+offset_bottom = 443.0
+theme_override_font_sizes/font_size = 20
+text = "Leave"
+
+[connection signal="text_changed" from="Player Input Box" to="." method="_on_player_input_box_text_changed"]
+[connection signal="pressed" from="Leave Button" to="." method="_on_leave_button_pressed"]

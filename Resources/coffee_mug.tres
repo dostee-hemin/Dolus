@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://bwhjrrc2we7av"]
+
+[ext_resource type="Script" path="res://Scripts/inventory_item.gd" id="1_8ai3g"]
+[ext_resource type="Texture2D" uid="uid://3swvtl22ygx4" path="res://Assets/Graphics/Coffee Mug 001 16x161.png" id="2_xrnjq"]
+
+[resource]
+script = ExtResource("1_8ai3g")
+name = "coffee mug"
+method_of_killing = "mug thrown at"
+pickup_type = "Weapon"
+texture = ExtResource("2_xrnjq")

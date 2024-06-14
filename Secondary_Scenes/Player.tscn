@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3 uid="uid://b10w5uttqs18h"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_qcete"]
+[ext_resource type="Texture2D" uid="uid://c5rl5cpkku02p" path="res://Assets/Graphics/32x32/Characters/Adam_M.png" id="2_1h3gl"]
+[ext_resource type="Script" path="res://Scripts/Animation_Creator.gd" id="3_7gj1r"]
+[ext_resource type="FontFile" uid="uid://bmr3debnqv0rs" path="res://Assets/Fonts/RobotoMono-Regular.ttf" id="4_ra68o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4syd3"]
+atlas = ExtResource("2_1h3gl")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w62yx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4syd3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dcpn5"]
+size = Vector2(28.3273, 22.366)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j416i"]
+radius = 101.005
+
+[sub_resource type="LabelSettings" id="LabelSettings_3jul1"]
+font = ExtResource("4_ra68o")
+font_size = 45
+
+[node name="Player" type="CharacterBody2D" groups=["Entity", "Player"]]
+z_index = 6
+collision_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_qcete")
+animation_texture = ExtResource("2_1h3gl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -28)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_w62yx")
+script = ExtResource("3_7gj1r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 16.5)
+scale = Vector2(1.51797, 1.74372)
+shape = SubResource("RectangleShape2D_dcpn5")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Interaction Zone" type="Area2D" parent="."]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction Zone"]
+shape = SubResource("CircleShape2D_j416i")
+
+[node name="Popup UI" type="Label" parent="."]
+offset_left = -67.5
+offset_top = -30.5
+offset_right = 67.5
+offset_bottom = 30.5
+text = "I | K"
+label_settings = SubResource("LabelSettings_3jul1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Info Label" type="Label" parent="."]
+offset_left = -12.0
+offset_top = -97.0
+offset_right = 151.0
+offset_bottom = 293.0
+scale = Vector2(0.133017, 0.133017)
+theme_override_font_sizes/font_size = 286
+text = "1"
+horizontal_alignment = 1

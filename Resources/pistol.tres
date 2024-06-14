@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://b37vjdr563x7k"]
+
+[ext_resource type="Script" path="res://Scripts/inventory_item.gd" id="1_wbcb0"]
+[ext_resource type="Texture2D" uid="uid://dw531d36lkgdi" path="res://Assets/Graphics/pistol small.png" id="2_f6yof"]
+
+[resource]
+script = ExtResource("1_wbcb0")
+name = "pistol"
+method_of_killing = "shot"
+pickup_type = "Weapon"
+texture = ExtResource("2_f6yof")

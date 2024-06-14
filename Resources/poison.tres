@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://bln7wl6orci1t"]
+
+[ext_resource type="Script" path="res://Scripts/inventory_item.gd" id="1_hqndn"]
+[ext_resource type="Texture2D" uid="uid://c7088orrntbpf" path="res://Assets/Graphics/posion_potion.png" id="2_ljnic"]
+
+[resource]
+script = ExtResource("1_hqndn")
+name = "poison"
+method_of_killing = "poisoned"
+pickup_type = "Weapon"
+texture = ExtResource("2_ljnic")

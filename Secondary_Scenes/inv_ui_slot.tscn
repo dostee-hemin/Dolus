@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfclq0q53hnsg"]
+
+[ext_resource type="Texture2D" uid="uid://rjfktshg6vix" path="res://Assets/Graphics/inventory-slot.png" id="1_n73ks"]
+[ext_resource type="Script" path="res://Scripts/inv_ui_slot.gd" id="1_t7k77"]
+[ext_resource type="Script" path="res://Scripts/kill_button.gd" id="3_j7uhk"]
+
+[node name="inv_ui_slot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 16)
+offset_right = 16.0
+offset_bottom = 16.0
+script = ExtResource("1_t7k77")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_n73ks")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="inside_slot" type="Sprite2D" parent="CenterContainer/Panel"]
+position = Vector2(-8, -8)
+centered = false
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+visible = false
+layout_mode = 0
+offset_left = -5.0
+offset_top = -4.0
+offset_right = 16.0
+offset_bottom = 19.0
+text = "1"
+horizontal_alignment = 2
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 0.309804, 0.321569, 0.52549)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_j7uhk")

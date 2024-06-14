@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4kpvipi2o6c"]
+
+[ext_resource type="Texture2D" uid="uid://g6v8mtm5cno" path="res://Assets/Graphics/light asset.png" id="1_v15hn"]
+[ext_resource type="Script" path="res://Scripts/Light.gd" id="2_ns8xy"]
+
+[node name="Light" type="PointLight2D"]
+scale = Vector2(0.75, 0.75)
+energy = 0.8
+texture = ExtResource("1_v15hn")
+script = ExtResource("2_ns8xy")

@@ -1,0 +1,92 @@
+[gd_scene load_steps=9 format=3 uid="uid://mo2pu8d80ruj"]
+
+[ext_resource type="Texture2D" uid="uid://d1m2738keddqj" path="res://Assets/Graphics/32x32/Characters/Alex_M.png" id="2_dweql"]
+[ext_resource type="Script" path="res://Scripts/Animation_Creator.gd" id="2_jhw7g"]
+[ext_resource type="Script" path="res://Scripts/Brain.gd" id="3_7g08s"]
+[ext_resource type="FontFile" uid="uid://bmr3debnqv0rs" path="res://Assets/Fonts/RobotoMono-Regular.ttf" id="4_wl32f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4g6ml"]
+atlas = ExtResource("2_dweql")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4i2tv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4g6ml")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1no1h"]
+size = Vector2(56, 72)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lwf1i"]
+radius = 81.0247
+
+[node name="Agent" type="CharacterBody2D" groups=["Agent", "Entity"]]
+z_index = 5
+collision_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("3_7g08s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -28)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4i2tv")
+script = ExtResource("2_jhw7g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1no1h")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 3.0
+target_desired_distance = 6.0
+path_postprocessing = 1
+avoidance_enabled = true
+radius = 0.01
+max_neighbors = 1
+
+[node name="Interaction Zone" type="Area2D" parent="."]
+scale = Vector2(0.8, 0.8)
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction Zone"]
+shape = SubResource("CircleShape2D_lwf1i")
+
+[node name="Conversation Panel" type="Panel" parent="."]
+offset_left = -159.0
+offset_top = -229.0
+offset_right = 158.0
+offset_bottom = -63.0
+
+[node name="Label" type="RichTextLabel" parent="Conversation Panel"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 11.0
+offset_right = 304.0
+offset_bottom = 153.0
+theme_override_fonts/normal_font = ExtResource("4_wl32f")
+text = "Agent: Hello this is a sample text
+
+Agent: Hello this is a sample text
+
+Agent: Hello this is a sample text
+
+"
+
+[node name="Info Label" type="Label" parent="."]
+offset_left = -13.0
+offset_top = -93.0
+offset_right = 150.0
+offset_bottom = 297.0
+scale = Vector2(0.133017, 0.133017)
+theme_override_font_sizes/font_size = 286
+text = "1"
+horizontal_alignment = 1
+
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_velocity_computed"]

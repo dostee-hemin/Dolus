@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://diltu48yhsqnu"]
+
+[ext_resource type="Texture2D" uid="uid://c671x0ufkt7xb" path="res://Assets/Graphics/computer-icons-encapsulated-postscript-clip-art-play-again-4f81a033603416f1691a78e07faacf7a.png" id="1_0yhvj"]
+[ext_resource type="Script" path="res://Scripts/end_game_UI.gd" id="1_7y5tm"]
+[ext_resource type="Texture2D" uid="uid://bfhpo1p7q673l" path="res://Assets/Graphics/Lose Background.png" id="2_uoj22"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mo45o"]
+texture = ExtResource("2_uoj22")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1or6u"]
+bg_color = Color(0.811765, 0.494118, 0.556863, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7y5tm")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_mo45o")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.385417
+anchor_top = 0.126543
+anchor_right = 1.38542
+anchor_bottom = 1.07407
+offset_right = -887.0
+offset_bottom = -538.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 55
+text = "YOU LOSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.386285
+anchor_top = 0.270452
+anchor_right = 0.614583
+anchor_bottom = 0.400082
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_1or6u")
+text = "Play again"
+metadata/_edit_use_anchors_ = true
+
+[node name="Computer-icons-encapsulated-postscript-clip-art-play-again-4f81a033603416f1691a78e07Faacf7a" type="Sprite2D" parent="Button"]
+position = Vector2(230, 42)
+scale = Vector2(0.102539, 0.102539)
+texture = ExtResource("1_0yhvj")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

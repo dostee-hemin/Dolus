@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://bix2o4aqo01a7"]
+
+[ext_resource type="Script" path="res://Scripts/Item_Panel.gd" id="1_rkg8i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_l2wna"]
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_kuyh3"]
+font_size = 26
+
+[sub_resource type="LabelSettings" id="LabelSettings_h5gqa"]
+font_size = 36
+
+[node name="Item Panel" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 725.0
+offset_top = 32.0
+offset_right = -32.0
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rkg8i")
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 39.0
+offset_right = 365.0
+offset_bottom = 153.0
+text = "Item Name"
+label_settings = SubResource("LabelSettings_l2wna")
+horizontal_alignment = 1
+
+[node name="Current Action" type="Label" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 99.0
+offset_right = 362.0
+offset_bottom = 194.0
+text = "Currently: status"
+label_settings = SubResource("LabelSettings_kuyh3")
+autowrap_mode = 2
+
+[node name="Set Action Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 220.0
+offset_right = 205.0
+offset_bottom = 305.0
+text = "Set Action"
+label_settings = SubResource("LabelSettings_h5gqa")
+
+[node name="Action List" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 277.0
+offset_right = 365.0
+offset_bottom = 501.0
+max_text_lines = 3
+auto_height = true
+
+[node name="Leave Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 507.0
+offset_right = 248.0
+offset_bottom = 561.0
+theme_override_font_sizes/font_size = 26
+text = "Leave"
+
+[connection signal="item_selected" from="Action List" to="." method="_on_action_list_item_selected"]
+[connection signal="pressed" from="Leave Button" to="." method="close_panel"]

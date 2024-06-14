@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dec1ctw3rh0ba"]
+
+[ext_resource type="Texture2D" uid="uid://7fjtvifh41jn" path="res://Assets/Graphics/Broken wardrobe.png" id="1_nhyq6"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_8s0n7"]
+
+[node name="Vote Button" type="Button"]
+offset_right = 20.0
+offset_bottom = 30.0
+scale = Vector2(4, 4)
+toggle_mode = true
+button_group = SubResource("ButtonGroup_8s0n7")
+icon = ExtResource("1_nhyq6")

@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://biph1u856oeul"]
+
+[ext_resource type="Texture2D" uid="uid://3swvtl22ygx4" path="res://Assets/Graphics/Coffee Mug 001 16x161.png" id="1_ny0d6"]
+
+[node name="Meeting_agent" type="Panel"]
+custom_minimum_size = Vector2(247, 84)
+offset_right = 247.0
+offset_bottom = 84.0
+scale = Vector2(1.44025, 1.44025)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5.0625, 5.0625)
+texture = ExtResource("1_ny0d6")
+centered = false
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 84.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
